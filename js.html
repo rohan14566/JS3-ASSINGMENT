@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <pre>
+        <h4>Q.Find the number of digits</h4>
+        const Find_Digits = (N) => 
+{
+  let i=N, digits=0;
+	 while(i>0){
+	   x = i%10;
+	   digits = digits + 1;
+	   i = parseInt(i/10);
+	 }
+	 return digits;
+};
+<h4>Q.Find the Fives</h4>
+const Find_Five = (N) => 
+{
+	 let i=N, digit5=0;
+	 while(i>0){
+	   x = i%10;
+	   if(x==5){
+	     digit5 = digit5 + 1;
+	   }
+	   i = parseInt(i/10);
+	 }
+	 return digit5;
+};
+<h4>Q.Find Sum</h4>
+const findSum = (n) => {
+	let sum=0;
+	for(let i=1; i<=n; i++){
+	  if(i%2===0){
+		sum = sum + i;
+	  }
+	}
+	return sum;
+  };
+<h4>Q.Find the sum of the digits of a given number.</h4>
+const Number_Sum = (N) => 
+{
+	let i = N, sum = 0;
+    while(i != 0){
+        x = i % 10;
+        sum = sum + x;
+        i = parseInt(i/10);
+    }
+  return sum;
+};
+<h4>Q.Print the Odds</h4>
+const Print_Odd = (N) => {
+	console.log(2);
+	for(let i=3 ; i<=N ; i++){
+	  if(i%2 !== 0){
+		console.log(i);
+	  }
+	}
+  };
+<h4>Q.Print the Pattern.</h4>
+const Print_pattern = (N) => {
+	for(let i=1;i<=N; i++){
+	  let a = "*";
+	  console.log(a.repeat(i));
+	}
+  };
+
+<h4>Q.Check whether a Number is a prime or not.</h4>
+const Prime_Check = (N) => {
+	let i;
+	let isPrime = true;
+	  if(N===0 || N===1) {
+	  isPrime = false;
+	}
+	else {
+	  for(i=2 ; i<=N/2 ; i++){
+		if (N%i === 0){
+		  isPrime = false;
+		  break;
+		}
+		else {
+		  isPrime = true;
+		}
+	  }
+	}
+	if(isPrime)
+	return("YES");
+	else
+	return("NO");
+  };
+<h4>Q.Print Numbers</h4>
+
+const printNumbers = (n) => {
+	let num;
+	for(let i=1; i<=n; i++){
+	  num = i;
+	  console.log(num);
+	}
+  };
+<h4>Q.Print tables</h4>
+
+const Print_Table = (N) => 
+{
+  let num = N;
+  let tab = 0;
+	for(let i=1; i<=10; i++){
+	  num = N*i;
+	  tab = N + " * " + i + " = " + num;
+	  console.log(tab);
+	}
+};
+    </pre>
+</body>
+</html>
